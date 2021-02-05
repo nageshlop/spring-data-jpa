@@ -4,5 +4,5 @@ arch:
   - ppc64le
 language: java
 script:
-  - mvn install -U -Denforcer.skip=true -DskipTests=true -Dmaven.javadoc.skip=true -B -V
-  - mvn test -Denforcer.skip=true -B
+  - mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+  - mvn test -B
